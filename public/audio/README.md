@@ -12,7 +12,7 @@ These supplied assets are loaded by the Web Audio runtime after the player enabl
 - Rex uses the bark, idle, run, and noise files for companion feedback.
 
 ## Background mix and controls
-`Last_Breath_of_a_Planet.mp4` is the continuous music bed (provided locally by the user). It streams and loops without decoding the entire video into memory. Base levels: 11% outdoors, 8% inside, 5.5% during hazards, 7% in menus/paused screens, multiplied by master volume (default 50%). Audio starts after a user gesture; a saved mute preference is respected. Hidden tabs pause all media. Music resumes at its previous position.
+`Last_Breath_of_a_Planet.mp4` is the continuous music bed (provided locally by the user). It streams and loops without decoding the entire video into memory. Base levels: 11% in the starting menu and outdoors, 8% inside, 5.5% during hazards, 7% in paused screens, multiplied by master volume (default 50%). Audio starts after a user gesture; a saved mute preference is respected. Hidden tabs pause all media. Music resumes at its previous position.
 
 Environment recordings crossfade over approximately two seconds; they are not restarted every three seconds. One instance per sound file and at most eight recorded effects may play concurrently. Failed files are suppressed for the current session. Intro media shares master mute/volume. Narration remains disabled. Master volume and mute are stored under `marsbound.audio.v1`.
 
